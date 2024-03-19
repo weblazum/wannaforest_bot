@@ -1,257 +1,262 @@
 [
 	{
 		"id": "0001",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0001.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0001.jpeg",
 		"type": "forest"
 	},
 	{
+		"id": "0002",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0002.jpeg",
+		"type": "summer"
+	},
+	{
 		"id": "0003",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0003.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0003.jpeg",
 		"type": "autumn"
 	},
 	{
 		"id": "0004",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0004.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0004.jpeg",
 		"type": "autumn"
 	},
 	{
 		"id": "0005",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0005.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0005.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0006",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0006.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0006.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0007",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0007.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0007.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0008",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0008.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0008.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0009",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0009.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0009.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0010",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0010.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0010.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0011",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0011.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0011.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0012",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0012.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0012.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0013",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0013.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0013.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0014",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0014.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0014.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0015",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0015.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0015.jpeg",
 		"type": "dark"
 	},
 	{
 		"id": "0016",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0016.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0016.jpeg",
 		"type": "autumn"
 	},
 	{
 		"id": "0017",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0017.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0017.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0018",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0018.jpg",
-		"type": "spring"
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0018.jpeg",
+		"type": ""
 	},
 	{
 		"id": "0019",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0019.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0019.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0020",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0020.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0020.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0021",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0021.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0021.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0022",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0022.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0022.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0023",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0023.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0023.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0024",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0024.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0024.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0025",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0025.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0025.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0026",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0026.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0026.jpeg",
 		"type": "autumn"
 	},
 	{
 		"id": "0027",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0027.jpg",
-		"type": "autumn"
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0027.jpeg",
+		"type": "off-season"
 	},
 	{
 		"id": "0028",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0028.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0028.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0029",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0029.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0029.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0030",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0030.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0030.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0031",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0031.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0031.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0032",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0032.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0032.jpeg",
 		"type": "autumn"
 	},
 	{
 		"id": "0033",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0033.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0033.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0034",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0034.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0034.jpeg",
 		"type": "summer"
 	},
 	{
 		"id": "0035",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0035.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0035.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0036",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0036.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0036.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0037",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0037.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0037.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0038",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0038.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0038.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0039",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0039.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0039.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0040",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0040.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0040.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0041",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0041.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0041.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0042",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0042.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0042.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0043",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0043.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0043.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0044",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0044.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0044.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0045",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0045.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0045.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0046",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0046.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0046.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0047",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0047.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0047.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0048",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0048.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0048.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0049",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0049.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0049.jpeg",
 		"type": "winter"
 	},
 	{
 		"id": "0050",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0050.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0050.jpeg",
 		"type": "dark"
 	},
 	{
 		"id": "0051",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0051.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0051.jpeg",
 		"type": "dark"
 	},
 	{
 		"id": "0052",
-		"url": "https://weblazum.ru/wantforest_bot/gallery/0052.jpg",
+		"url": "https://weblazum.ru/wantforest_bot/gallery/0052.jpeg",
 		"type": "dark"
 	}
 ]
