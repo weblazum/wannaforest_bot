@@ -79,7 +79,7 @@ bot.command('help', async (ctx) => {
 // const moodKeyboard = InlineKeyboard.from(moodLabels)
 
 const moodKeyboard = new InlineKeyboard()
-	.text('Зеленый лес', 'summer').row()
+	.text('Зеленый лес', 'green').row()
 	.text('Зимний лес', 'winter').row()
 	.text('Осенний лес', 'autumn').row()
 	.text('Межсезонье', 'off-season').row()
