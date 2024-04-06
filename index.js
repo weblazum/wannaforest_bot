@@ -32,12 +32,8 @@ bot.api.setMyCommands([
 	},
 	{
 		command: 'mood', 
-		description: 'Настроение',
-	},
-	{
-		command: 'help', 
-		description: 'Помощь по боту',
-	},
+		description: 'Выбрать настроение',
+	}
 ])
 
 const startLabels = ['\uD83C\uDF32 Дай леса! \uD83C\uDF32', 'Выбери настроение \u27A1']
@@ -58,9 +54,9 @@ bot.command('start', async (ctx) => {
 
 // «Дай леса»
 
-bot.command('help', async (ctx) => {
-	await ctx.reply('Помощь по боту')
-})
+// bot.command('help', async (ctx) => {
+// 	await ctx.reply('Помощь по боту')
+// })
 
 // const moodLabels = [
 // 	[{text:'Летний лес', callback_data:'summer'}], 
@@ -78,6 +74,21 @@ bot.command('help', async (ctx) => {
 
 // const moodKeyboard = InlineKeyboard.from(moodLabels)
 
+
+bot.hears([startLabels[0], '/getforest'], async (ctx) => {
+	let randomIndex = Math.floor(Math.random() * commonGallery.length);
+
+	if (ctx.msg.chat.id == '268417375') {
+		await ctx.replyWithPhoto(`${commonGallery[randomIndex].url}?${randomIndex}`, {
+			caption: `admin info: \n url: ${commonGallery[randomIndex].url}\n type: ${commonGallery[randomIndex].type}`
+		});
+	} else {
+		await ctx.replyWithPhoto(commonGallery[randomIndex].url, {
+			caption: botUrl
+		});
+	}
+})
+
 const moodKeyboard = new InlineKeyboard()
 	.text('Зеленый лес', 'green').row()
 	.text('Зимний лес', 'winter').row()
@@ -85,44 +96,105 @@ const moodKeyboard = new InlineKeyboard()
 	.text('Межсезонье', 'off-season').row()
 	.text('Мрачный лес', 'dark')
 
-const repeatKeyboard = new InlineKeyboard().text('Повторить', 'repeat').row().text('Выбрать другое настроение', 'back')
 
-
-bot.hears([startLabels[0], '/getforest'], async (ctx) => {
-	let randomIndex = Math.floor(Math.random() * commonGallery.length);
-	await ctx.replyWithPhoto(commonGallery[randomIndex].url, {
-		caption: botUrl
-	});
-})
-
-bot.hears([startLabels[1], 'Выбрать другое настроение', '/mood'], async (ctx) => {
+bot.hears([startLabels[1], '/mood'], async (ctx) => {
 	await ctx.reply('Выбери настроение:', {
 		reply_markup: moodKeyboard
 	})
 })
+
+const repeatKeyboard = new InlineKeyboard().text('Повторить', 'repeat').row().text('Выбрать другое настроение  \u27A1', 'back')
+
+let callbackData
+
 
 bot.on('callback_query:data', async (ctx) => {
 	await ctx.answerCallbackQuery()
 
-	let arrayType = filterGallery(ctx.callbackQuery.data, imagesArray)
-	let randomIndex = Math.floor(Math.random() * arrayType.length)
 
-	await ctx.replyWithPhoto(arrayType[randomIndex].url, {
-		caption: botUrl
-	})
+	let callbackName
+	let arrayType
+	let randomIndex
 
-	await ctx.reply('Выбери настроение:', {
-		reply_markup: moodKeyboard
-	})
+	const setCallbackName = () => {
+		switch (callbackData) {
+			case "green":
+				callbackName = "зелёного леса"
+				break
+			case "winter":
+				callbackName = "зимнего леса"
+				break
+			case "autumn":
+				callbackName = "осеннего леса"
+				break
+			case "off-season":
+				callbackName = "межсезонья"
+				break
+			case "dark":
+				callbackName = "мрачного леса"
+				break
+			default:
+				callbackName = "леса"
+		}
+	}
+
+
+	switch (ctx.callbackQuery.data) {
+		case 'repeat':
+
+			arrayType = filterGallery(callbackData, imagesArray)
+			randomIndex = Math.floor(Math.random() * arrayType.length)
+
+			setCallbackName()
+			
+			await ctx.replyWithPhoto(arrayType[randomIndex].url, {
+				caption: botUrl
+			})
+
+			await ctx.reply(`Ещё ${callbackName}?`, {
+				reply_markup: repeatKeyboard
+			})
+			break
+
+		case 'back':
+			await ctx.reply('Выбери настроение:', {
+				reply_markup: moodKeyboard
+			})
+			break
+
+		default:
+			callbackData = ctx.callbackQuery.data
+
+			arrayType = filterGallery(callbackData, imagesArray)
+			randomIndex = Math.floor(Math.random() * arrayType.length)
+
+			setCallbackName()
+			
+			await ctx.replyWithPhoto(arrayType[randomIndex].url, {
+				caption: botUrl
+			})
+
+			await ctx.reply(`Ещё ${callbackName}?`, {
+				reply_markup: repeatKeyboard
+			})
+	}
+
 })
-
-// bot.on('msg', async (ctx) => {
-// 	console.log(ctx.msg)
-// })
 
 bot.hears('Звук', async (ctx) => {
 	await ctx.replyWithVoice('https://weblazum.ru/wantforest_bot/audio/002.ogg')
 })
+
+
+bot.on('msg', async (ctx) => {
+	await ctx.reply('Бот может прислать только фотографию леса. Нажми кнопку <b>«Дай леса»</b> или введи команду /getforest, чтобы получить случайную фотографию. Также ты можешь выбрать настроение из списка с помощью команды /mood.', {
+		parse_mode: "HTML" ,
+		reply_markup: startKeyboard
+	})
+
+	console.log(ctx.msg)
+})
+
 
 // bot.api.sendMessage(268417375, "Hi!")
 
