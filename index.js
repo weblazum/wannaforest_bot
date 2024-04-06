@@ -14,9 +14,11 @@ const filterGallery = (type, array, exception = false) => {
 	}
 }
 
-const imagesArray = JSON.parse(fs.readFileSync('gallery.json'));
+const imagesArray = JSON.parse(fs.readFileSync('gallery.json'))
 
-const commonGallery = filterGallery("dark", imagesArray, true);
+const commonGallery = filterGallery("dark", imagesArray, true)
+
+const adminTelegramID = 268417375
 
 
 const botUrl = "@wannaforest_bot"
@@ -78,15 +80,9 @@ bot.command('start', async (ctx) => {
 bot.hears([startLabels[0], '/getforest'], async (ctx) => {
 	let randomIndex = Math.floor(Math.random() * commonGallery.length);
 
-	if (ctx.msg.chat.id == '268417375') {
-		await ctx.replyWithPhoto(`${commonGallery[randomIndex].url}?${randomIndex}`, {
-			caption: `admin info: \n url: ${commonGallery[randomIndex].url}\n type: ${commonGallery[randomIndex].type}`
-		});
-	} else {
-		await ctx.replyWithPhoto(commonGallery[randomIndex].url, {
-			caption: botUrl
-		});
-	}
+	await ctx.replyWithPhoto(commonGallery[randomIndex].url, {
+		caption: botUrl
+	});
 })
 
 const moodKeyboard = new InlineKeyboard()
