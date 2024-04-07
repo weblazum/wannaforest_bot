@@ -108,31 +108,31 @@ bot.on('callback_query:data', async (ctx) => {
 	await ctx.answerCallbackQuery()
 
 
-	let callbackName
+	// let callbackName
 	let arrayType
 	let randomIndex
 
-	const setCallbackName = () => {
-		switch (callbackData) {
-			case "green":
-				callbackName = "зелёного леса"
-				break
-			case "winter":
-				callbackName = "зимнего леса"
-				break
-			case "autumn":
-				callbackName = "осеннего леса"
-				break
-			case "off-season":
-				callbackName = "межсезонья"
-				break
-			case "dark":
-				callbackName = "мрачного леса"
-				break
-			default:
-				callbackName = "леса"
-		}
-	}
+	// const setCallbackName = () => {
+	// 	switch (callbackData) {
+	// 		case "green":
+	// 			callbackName = "зелёного леса"
+	// 			break
+	// 		case "winter":
+	// 			callbackName = "зимнего леса"
+	// 			break
+	// 		case "autumn":
+	// 			callbackName = "осеннего леса"
+	// 			break
+	// 		case "off-season":
+	// 			callbackName = "межсезонья"
+	// 			break
+	// 		case "dark":
+	// 			callbackName = "мрачного леса"
+	// 			break
+	// 		default:
+	// 			callbackName = "леса"
+	// 	}
+	// }
 
 
 	switch (ctx.callbackQuery.data) {
@@ -141,15 +141,16 @@ bot.on('callback_query:data', async (ctx) => {
 			arrayType = filterGallery(callbackData, imagesArray)
 			randomIndex = Math.floor(Math.random() * arrayType.length)
 
-			setCallbackName()
+			// setCallbackName()
 			
 			await ctx.replyWithPhoto(arrayType[randomIndex].url, {
-				caption: botUrl
-			})
-
-			await ctx.reply(`Ещё ${callbackName}?`, {
+				caption: botUrl,
 				reply_markup: repeatKeyboard
 			})
+
+			// await ctx.reply(`Ещё ${callbackName}?`, {
+			// 	reply_markup: repeatKeyboard
+			// })
 			break
 
 		case 'back':
@@ -164,15 +165,16 @@ bot.on('callback_query:data', async (ctx) => {
 			arrayType = filterGallery(callbackData, imagesArray)
 			randomIndex = Math.floor(Math.random() * arrayType.length)
 
-			setCallbackName()
+			// setCallbackName()
 			
 			await ctx.replyWithPhoto(arrayType[randomIndex].url, {
-				caption: botUrl
-			})
-
-			await ctx.reply(`Ещё ${callbackName}?`, {
+				caption: botUrl,
 				reply_markup: repeatKeyboard
 			})
+
+			// await ctx.reply(`Ещё ${callbackName}?`, {
+			// 	reply_markup: repeatKeyboard
+			// })
 	}
 
 })
